@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 P=a
 Q=b
 echo "${P}: Hi &{Q}"
