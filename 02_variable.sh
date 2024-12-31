@@ -1,6 +1,7 @@
 #!bin/bash
-
-echo "Rama: Hi Srinu"
-echo "Srinu: Hi Rama"
-echo "Rama: How is the yokshith"
-echo "Srinu: Good!Thanks Rama"
+P=a
+Q=b
+echo "${P}: Hi &{Q}"
+echo "&{Q}: Hi ${P}"
+echo "${P}: How is the yokshith"
+echo "&{Q}: Good!Thanks ${P}"
