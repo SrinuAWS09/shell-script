@@ -11,4 +11,4 @@ read -s username
 echo "your 2nd name is: ${username}"
 echo "please provide your 2nd password:"
 read -s pwd
-echo "your 2nd password is :${pwd}"
+echo "your 2nd password is :${p
