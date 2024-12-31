@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo " Please enter your name:"
+read name:
+echo " your name is: ${name}"
+echo " Please enter your password:"
+read password:
+echo " your password is: ${password}"
+echo "please enter your 2nd username:"
+read -s 2ndname:
+echo "your 2nd name is:"${2ndname}"
+echo "please provide your 2nd password:"
+read -s 2ndpassword
+echo "your 2nd password is :${2ndpassword}"
