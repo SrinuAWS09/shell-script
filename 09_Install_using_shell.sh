@@ -23,7 +23,7 @@ if [ $? -ne 0 ]
         fi
     else
       echo " mysql is already installed"
-
+fi
 dnf list installed git 
 
 if [ $? -ne 0]
@@ -37,6 +37,6 @@ if [ $? -ne 0]
         else 
             echo " Installation success.. GIT"
         fi
-
  else
       echo " Already GIT installed"
+fi
