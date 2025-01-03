@@ -7,22 +7,36 @@ then
     echo "ERROR: This is not root user"
     exit 1
 fi
-dnf install mysql -y
-if [ $? -ne 0 ]
- then
-     echo "ERROR: Installation is failed...MYSQL"
-     exit 1
-else 
-     echo " Installation success.. MYSQL"
-fi
-dnf install git -y
+
+dnf list installed mysql
 
 if [ $? -ne 0 ]
+   then 
+      dnf install mysql -y
+    
+        if [ $? -ne 0 ]
+        then
+            echo "ERROR: Installation is failed...MYSQL"
+            exit 1
+        else 
+            echo " Installation success.. MYSQL"
+        fi
+    else
+      echo " mysql is already installed"
+
+dnf list installed git 
+
+if [ $? -ne 0]
  then
-     echo "ERROR: Installation is failed...GIT"
-     exit 1
-else 
-     echo " Installation success.. GIT"
-fi
+    dnf install git -y
 
+        if [ $? -ne 0 ]
+        then
+            echo "ERROR: Installation is failed...GIT"
+            exit 1
+        else 
+            echo " Installation success.. GIT"
+        fi
 
+ else
+      echo " Already GIT installed"
