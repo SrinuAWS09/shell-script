@@ -34,3 +34,11 @@ fi
 
 FILES_TO_DELETE=$( find $SOURCE_DIR -name "*.log" -mtime +14) &>>$LOG_FILE_NAME 
 echo "Files to be deleted:$FILES_TO_DELETE" 
+
+while read -r file
+
+do
+
+echo "Reading the Files: $file"
+
+done <<< $FILES_TO_DELETE
