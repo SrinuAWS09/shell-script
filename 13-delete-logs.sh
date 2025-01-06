@@ -8,7 +8,7 @@ N="\e[0m"
 
 SOURCE_DIR="/home/ec2-user/app-logs"
 
-LOG_FOLDER="/var/log/expense-logs"
+LOG_FOLDER="/var/log/shellscript-logs"
 LOG_FILE=$(echo $0 | cut -d "." -f2)
 TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
 LOG_FILE_NAME="$LOG_FOLDER/$LOG_FILE-$TIMESTAMP.log"
