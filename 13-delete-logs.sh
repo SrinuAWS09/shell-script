@@ -39,7 +39,7 @@ while read -r file
 
 do
 
-echo "Reading the Files: $file"
+echo "deleting the Files: $file"
 rm -rf $file
 
 done <<< $FILES_TO_DELETE
