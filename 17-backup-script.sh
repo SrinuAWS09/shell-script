@@ -41,4 +41,3 @@ if [ ! -d $DEST_DIR ]
       echo -e "$DEST_DIR doesn't exit.. please check"
       exit 1
 if
-
