@@ -16,10 +16,11 @@ LOG_FILE_NAME="$LOGS_FOLDER/$LOG_FILE-$TIMESTAMP.log"
 
 
 
-USAGE(){
-echo -e "$R USAGE::$N sh 17-backup-script.sh <SOURCE_DIR> <DEST_DIR> <DAYS(Optional)>"
-
-}
+USAGE() 
+   {
+    echo -e "$R USAGE::$N sh 17-backup-script.sh <SOURCE_DIR> <DEST_DIR> <DAYS(Optional)>"
+    exit 1
+  }
 
 mkdir -p /home/ec2-user/shellscript-logs
 
