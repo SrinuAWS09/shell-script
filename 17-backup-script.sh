@@ -25,8 +25,8 @@ USAGE()
 mkdir -p /home/ec2-user/shellscript-logs
 
 if [ $# -lt 2  ]
-then
-USAGE
+  then
+      USAGE
 fi
 
 if [ ! -d $SOURCE_DIR ]
@@ -93,4 +93,4 @@ if
 
 # else
 #     echo "No files found older than $DAYS"
-# fi
+# #fi
