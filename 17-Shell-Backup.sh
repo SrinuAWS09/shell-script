@@ -41,5 +41,5 @@ fi
 
 echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
-FILE=$( )
+FILE=$( find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
 
