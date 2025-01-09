@@ -55,7 +55,7 @@ if [ -n "$FILE" ]
               echo "Deleting the file :$filepath" &>>LOG_FILE_NAME
               rm -fr $filepath
               echo "delted files: $filepath "
-            done >>>$FILE
+            done <<< $FILE
      else
             echo -e "$R Failed to zip $N the files"
             exit 1
